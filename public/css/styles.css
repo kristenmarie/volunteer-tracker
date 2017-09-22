@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway');
+
+.home-button a:link {
+    color: white;
+}
+.home-button a:visited {
+    color: white;
+}
+
+.home-button a:active {
+    color: white;
+}
+
+.home-button a:hover {
+    text-decoration: none;
+}
+
+.home-button a{
+  font-size: 16px;
+}
+
+.home-button {
+  text-align: center;
+}
+
+.delete-button {
+  text-align: center;
+}
+.page-header {
+  text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-color: #4F6A98;
+  color: white;
+}
+
+.jumbotron h1 {
+  margin-top: 15px;
+}
+
+.current-projects {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.volunteers {
+  text-align: center;
+  margin-bottom: 100px;
+  border-radius: 6px;
+}
+
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  padding-top: 10px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+label {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+button {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  background-color: #D0DAE6;
+}
+
+hr {
+  border: 0;
+  width: 80%;
+  color: #726868;
+  background-color: #726868;
+  height: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-right: 30px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,8 +1,15 @@
-<div class="page-header">
+<div class="jumbotron">
   <h1><%= @project.title %></h1>
 </div>
 
 <div class="container">
+  <div class="delete-button">
+    <form action="/projects/<%= @project.id() %>" method="post">
+      <input name="_method" type="hidden" value="delete">
+
+      <button type="submit" class="btn btn-danger">Delete Project</button>
+    </form>
+  </div>
   <div class="volunteers">
     <% if @project.volunteers.any? %>
       <h2>Project Volunteers:</h2>
@@ -12,11 +19,13 @@
         <% end %>
       </ul>
 
+
     <% end %>
   </div>
+  <hr>
 
   <div class="volunteer-form">
-    <h2>Add Volunteer to Project:</h2>
+    <h2>Add Volunteer to Project</h2>
     <form action="/projects/<%= @project.id %>" method="post">
       <div class="form-group">
         <label for="name">Volunteer Name:</label>
@@ -27,25 +36,19 @@
   </div>
 
   <div class="update-project">
-    <h2>Update Project:</h2>
+    <h2>Update Project</h2>
     <form action="/projects/<%= @project.id %>" method="post">
       <input name="_method" type="hidden" value="patch">
       <div class="form-group">
-        <label for="title">New Project Title</label>
+        <label for="title">New Project Title:</label>
         <input type="text" name="title" class="form-control">
       </div>
       <button type="submit" class="btn btn-warning">Update Project</button>
     </form>
   </div>
 
-  <div class="delete-button">
-    <form action="/projects/<%= @project.id() %>" method="post">
-      <input name="_method" type="hidden" value="delete">
 
-      <button type="submit" class="btn btn-danger">Delete Project</button>
-    </form>
-  </div>
   <div class="home-button">
-    <button type="button" name="button"><a href="/">Home</a></button>
+    <button type="button" name="button" class="btn btn-primary"><a href="/">Home</a></button>
   </div>
 </div>
