@@ -26,4 +26,13 @@ class Project
     projects
   end
 
+  def self.find(id)
+    Project.all.each do |project|
+      if project.id == id
+        return project
+      end
+    end
+  end
+
+
 end
