@@ -20,3 +20,15 @@ post('/') do
   @projects = Project.all
   erb(:index)
 end
+
+get('/projects/:id') do
+  @project = Project.find(params.fetch(:id).to_i)
+  erb(:project)
+end
+
+patch('/projects/:id') do
+  title = params.fetch("title")
+  @project = Project.find(params.fetch(:id).to_i)
+  @project.update({:title => title})
+  erb(:project)
+end
